@@ -1,0 +1,510 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root {
+    --branco: #ffffff;
+    --azul_claro: #00b3e3;
+    --azul: #082C5B;
+    --preto: black;
+    --laranja: #F37500;
+}
+
+body{
+    background-color: var(--laranja);
+}  
+
+/* Início - Cabeçalho */
+
+header {
+    background-color: var(--branco);
+    box-shadow: #2f303d25 2px 6px 5px;
+    padding-bottom: 10px;
+    gap: 50px;
+}
+
+.logo1 {
+    padding-top: 10px;
+    width: 205px;
+    margin-left: -60px;
+    padding-left: 50px;
+}
+
+.text-nav {
+    gap: 20px;
+    text-decoration: none;
+    align-items: center;
+    font-family: 'Microsoft JhengHei UI', sans-serif;
+    color: #000;
+    font-size: 15px;
+}
+
+.text-nav:hover {
+    color: var(--laranja);
+}
+
+.doe-agora {
+    font-size: 15px;
+    gap: 20px;
+    text-decoration: none;
+    margin-left: 50px;
+    align-items: center;
+    font-family: 'Microsoft JhengHei UI', sans-serif;
+    color: var(--branco);
+    background-color: var(--laranja);
+    border-radius: 25px;
+    border-color: var(--laranja);
+    border: none;
+    padding: 10px;
+}
+
+.doe-agora:hover {
+    color: var(--laranja);
+    background-color: var(--branco);
+    border-color: var(--laranja);
+    border: 2px solid var(--laranja);
+}
+
+.group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    max-width: 580px;
+}
+  
+.input {
+    font-family: 'Microsoft JhengHei UI', sans-serif;
+    width: 100%;
+    height: 30px;
+    padding-left: 2.5rem;
+    box-shadow: 0 0 0 1.5px #2b2c37, 0 0 25px -17px #000;
+    border: 0;
+    border-radius: 23px;
+    background-color: var(--branco);
+    outline: none;
+    cursor: text;
+    color: var(--cinza);
+    z-index: 0;
+}
+  
+.input::placeholder {
+    color: var(--cinza);
+}
+  
+.input:hover {
+    box-shadow: 0 0 0 2.5px #2f303d, 0px 0px 25px -15px #000;
+}
+  
+.input:active {
+    transform: scale(0.95);
+}
+  
+.input:focus {
+    box-shadow: 0 0 0 2.5px #2f303d;
+    width: 800px !important;
+    border: none;
+}
+
+.search-icon {
+    position: absolute;
+    left: 1rem;
+    fill: #89898c;
+    width: 1rem;
+    height: 1rem;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Fim - Cabeçalho */
+
+/* Início - MAIN */
+
+h1 {
+    color: var(--branco) !important;
+    font-weight: 600;
+    padding-top: 100px;
+    padding-bottom: 0px;
+    font-family: "Poppins", serif;
+    text-align: center;
+}
+
+.botao {
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    background-color: #bfbfbfa4;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.botao .btn-download svg {
+    color: var(--azul);
+}
+
+.botao .btn-download:hover svg {
+    color: var(--azul);
+    transform: scale(1.1);
+}
+
+/* Efeito no botão */
+.botao .btn-download:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.linha {
+    width: 100%;
+    border: 1px solid #ddd;
+    margin: 15px 0;
+}
+
+.not {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 10px;
+    background: #f8f8f8;
+    margin-bottom: 10px;
+}
+
+.img-ong {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #eee;
+}
+
+.divzinha-not {
+    flex: 1;
+    margin-left: 15px;
+}
+
+.divzinha-not h5 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 3px;
+}
+
+.divzinha-not p {
+    font-size: 14px;
+    color: #888;
+    margin: 0;
+}
+
+.aprovacaoONG {
+    background-color: white;
+    padding: 20px 30px;
+    width: 700px;
+    border-radius: 15px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    padding-top: 40px !important;
+}
+
+.linha {
+    width: 100%;
+    border: 1px solid #ddd;
+    margin: 15px 0;
+}
+
+.not {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 10px;
+    background: #ffffff;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.img-ong {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #eee;
+    box-shadow: black;
+}
+
+.divzinha-not {
+    flex: 1;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.divzinha-not h5 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 3px;
+}
+
+.divzinha-not p {
+    font-size: 14px;
+    color: #888;
+    margin: 0;
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-aprovacao, .btn-descarte {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.btn-aprovacao {
+    background-color: #bfbfbf;
+}
+
+.btn-descarte {
+    background-color: #e60000;
+    margin-left: 7px;
+}
+
+.btn-aprovacao img, .btn-descarte img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain; 
+}
+
+.botao-usuarios {
+    background-color: var(--azul);
+    color: var(--branco);
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 45px;
+}
+
+/* Fim - MAIN */
+
+/* Início - Rodapé */
+
+footer {
+    background-color: var(--branco);
+    padding-top: 60px;
+}
+
+.logo2 {
+    padding-top: 10px;
+    padding-right: 30px;
+    width: 170px;
+    margin-left: 79px;
+}
+
+.p-t {
+    padding-bottom: 40px;
+}
+
+.tam {
+    width: 67%;
+}
+
+.tam2 {
+    font-size: 18px;
+}
+
+.tam3 {
+    font-size: 18px;
+}
+
+.azul {
+    background-color: var(--azul);
+    color: var(--branco);
+    padding: 10px;
+}
+
+.azul h5 {
+    font-weight: normal;
+}
+
+.space {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.imgfooter {
+    width: 30px;
+}
+
+.alt {
+    width: 35px;
+}
+
+.margin {
+    margin-bottom: 18px !important;
+}
+
+/* Fim - Rodapé */
+
+/* Responsivo */
+
+@media (max-width: 426px) {
+    /* Início - Cabeçalho */
+
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        padding-bottom: 45px;
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: -50px;
+        line-height: 1px;
+    }
+
+    .doe-agora { 
+        align-items: center;
+        justify-content: center;
+        margin-left: 50px;
+        gap: 20px;
+        margin-bottom: 20px;
+    } 
+
+    .logo1 {
+        padding-top: 22px;
+        width: 208px;
+    }
+
+    .text-nav {
+        padding-left: 43px;
+    }
+
+    .group {
+        padding-bottom: 27px;
+    }
+
+    .input:focus {
+        width: 340px !important;
+    }
+
+    /* Fim - Cabeçalho */
+
+    /* Início - MAIN */
+
+    .aprovacaoONG {
+        width: 90%;
+    }
+
+    .botao-usuarios {
+        margin-bottom: 0px;
+    }
+
+    /* Fim - MAIN */
+
+    /* Início - Rodapé */
+
+    footer {
+        padding-top: 18px;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .tamanho {
+        font-size: 25px;
+    }
+
+    .logo2 {
+        margin: auto;
+        margin-bottom: 55px;
+        padding-top: 0px;
+        padding-right: 0px;
+    }
+
+    .tam {
+        width: 160px;
+        margin-bottom: 27px;
+        margin-top: 30px;
+    }
+
+    .space {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding-bottom: 45px;
+    }
+
+    .imgfooter {
+        width: 30px;
+    }
+
+    .alt {
+        width: 35px;
+    }
+
+    .p-t {
+        padding-bottom: 10px;
+    }
+
+    .p-tt {
+        padding-bottom: 10px;
+    }
+
+    .azul h5 {
+        text-align: center;
+    }
+
+    /* Fim - Rodapé */
+}
+
+@media (max-width: 376px) {
+    /* Ajuste */
+
+    .botao-usuarios {
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 321px) {
+    /* Ajustes */
+
+    .input:focus {
+        width: 300px !important;
+        font-size: 13.8px;
+    }
+
+    .botao-usuarios {
+        margin-bottom: 0px;
+    }
+
+    .tam3 {
+        font-size: 16px;
+    }
+
+    .btn-aprovacao {
+        margin-left: 12px;
+    }
+
+    .btn-descarte {
+        margin-left: 12px;
+    }
+}
