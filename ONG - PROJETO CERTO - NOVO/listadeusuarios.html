@@ -209,23 +209,23 @@
 
         document.addEventListener("DOMContentLoaded", updateTable); // Preencher a tabela ao carregar a página
 
-        // $(document).ready(function () {
-        //     window.onload = function () {
-        //         let token = localStorage.getItem("token");
-        //         let tipo = localStorage.getItem("tipo");
+        $(document).ready(function () {
+            window.onload = function () {
+                let token = localStorage.getItem("token");
+                let tipo = localStorage.getItem("tipo");
 
-        //         if (!token || tipo != 1) { // Se não tiver token ou não for do tipo 1 (admin)
-        //             Swal.fire({
-        //                 title: "Erro",
-        //                 text: "Você não pode acessar essa página!",
-        //                 icon: "error",
-        //                 confirmButtonText: "OK"
-        //             }).then(() => {
-        //                 window.location.href = "login.html";
-        //             });
-        //         }
-        //     };
-        // });
+                if (!token || tipo != 1) { // Se não tiver token ou não for do tipo 1 (admin)
+                    Swal.fire({
+                        title: "Erro",
+                        text: "Você não pode acessar essa página!",
+                        icon: "error",
+                        confirmButtonText: "OK"
+                    }).then(() => {
+                        window.location.href = "login.html";
+                    });
+                }
+            };
+        });
 
         $("#formCadastroUsuario").on("submit", function(e) {
 
