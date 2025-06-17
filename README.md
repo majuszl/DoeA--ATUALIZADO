@@ -1,2 +1,2 @@
 # DoeA--ATUALIZADO
-HTML do projeto "Doe Aí" atualizado com responsividade no dia 08/04.
+Projeto "Doe Aí" atualizado e finalizado (10/06).
