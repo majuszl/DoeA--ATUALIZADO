@@ -1,2 +1,2 @@
 # DoeA--ATUALIZADO
-Projeto "Doe Aí" atualizado e finalizado (10/06).
+Projeto "Doe Aí" atualizado e finalizado - a pasta já foi colocada em zip - (10/06).
